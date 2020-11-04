@@ -1,81 +1,104 @@
- /*   (function () {
 
-        //dvieju dimensiju asociatyvus
-
-        var studentai = {
-            'Jonas': {
-                'akodas': 1,
-                'adresas': 'Pievu g. 1,Kaunas',
-                'ivertinimai': {
-                    'php': 10,
-                    'js': 8,
-                    'Java': 9
-                }
-            },
-            'Petras': {
-                'akodas': 896,
-                'adresas': 'Tilto g. 1,Kaunas',
-                'ivertinimai': {
-                    'php': 9,
-                    'js': 6,
-                    'Java': 3
-                }
-            },
-            'Andrius': {
-                'akodas': 567,
-                'adresas': 'Rutu g. 1,Kaunas',
-                'ivertinimai': {
-                    'php': 9,
-                    'js': 4,
-                    'Java': 7
-                }
-            },
-        }
-
-        for (var item in studentai) {
-            console.log(item);
-            console.log('Duomenys');
-            for (var subitem in studentai[item]){
-                    if (subitem === 'ivertinimai'){
-                         console.log("Ivertinimai:");
-                    for(let subject in studentai[item][subitem]){
-                        console.log(subject + ": "+ studentai[item][subitem][subject])
-                    }
-                }else{
-                        console.log(subitem + ':' + studentai[item][subitem]);
-                    }
-            }
-        }
-
-
-    })();
-  */
 
  var knygos = {
      'Knyga1': {
          'ISBN': 1,
          'Leidimo metai': 2018,
-         'Pavadinimas': 'Mano mintys debesyse',
-         'Puslapiu skaicius': 300
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 300,
+         'Kategorija' : 'Grozine literatura'
      },
      'Knyga2': {
          'ISBN': 2,
          'Leidimo metai': 2019,
-         'Pavadinimas': 'Php',
-         'Puslapiu skaicius': 400
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 400,
+         'Kategorija' : 'Grozine literatura'
      },
      'Knyga3': {
          'ISBN': 3,
          'Leidimo metai': 2017,
          'Pavadinimas': 'Javascript',
-         'Puslapiu skaicius': 245
+         'Puslapiu skaicius': 245,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga4': {
+         'ISBN': 4,
+         'Leidimo metai': 2020,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 500,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga5': {
+         'ISBN': 5,
+         'Leidimo metai': 2016,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 300,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga6': {
+         'ISBN': 6,
+         'Leidimo metai': 2019,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 450,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga7': {
+         'ISBN': 7,
+         'Leidimo metai': 2019,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 255,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga8': {
+         'ISBN': 8,
+         'Leidimo metai': 2020,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 400,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga9': {
+         'ISBN': 9,
+         'Leidimo metai': 2018,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 250,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga10': {
+         'ISBN': 10,
+         'Leidimo metai': 2017,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 480,
+         'Kategorija' : 'Grozine literatura'
+     },
+     'Knyga11': {
+         'ISBN': 11,
+         'Leidimo metai': 2018,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 350,
+         'Kategorija' : 'Populiarioji psichologija'
+     },
+     'Knyga12': {
+         'ISBN': 12,
+         'Leidimo metai': 2020,
+         'Pavadinimas': 'Javascript',
+         'Puslapiu skaicius': 400,
+         'Kategorija' : 'Dalykine literatura'
      }
  }
 
  for (var item in knygos) {
      console.log(item);
-     console.log('Savybes');
-     for (var subitem in knygos[item]) {
-         console.log(subitem + ':' + knygos[item][subitem]);
-     }
+
+    for (var subitem in knygos[item])
+    {
+        console.log(subitem + ':' + knygos[item][subitem]);
+        if (subitem === 'Leidimo metai')
+        {
+            if ('Leidimo metai' === '2020')
+            {
+
+            }
+        }
+    }
  }
